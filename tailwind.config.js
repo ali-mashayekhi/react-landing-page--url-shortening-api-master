@@ -12,6 +12,10 @@ export default {
         "dark-violet-custom": "hsl(257, 27%, 26%)",
         "red-custom": "hsl(0, 87%, 67%)",
       },
+
+      backgroundImage: {
+        "url-pattern-mobile": "url(../../assests/bg-shorten-mobile.svg)",
+      },
     },
   },
   plugins: [],
