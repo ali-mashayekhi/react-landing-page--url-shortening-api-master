@@ -5,5 +5,18 @@
 @layer base {
   html {
     font-family: "Poppins", sans-serif;
+    background-color: hsl(0, 0%, 95%);
   }
+
+  /* .bg-features {
+    background: linear-gradient(
+      to right,
+      #fff 0%,
+      #fff 48%,
+      hsl(180, 66%, 49%) 48%,
+      hsl(180, 66%, 49%) 52%,
+      #fff 52%,
+      #fff 100%
+    );
+  } */
 }
