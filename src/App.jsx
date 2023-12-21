@@ -4,15 +4,19 @@ import Intro from "./components/Intro";
 import Url from "./components/Url/Url";
 import Features from "./components/Features";
 import Cta from "./components/Cta";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Header />
-      <Intro />
-      <Url />
-      <Features />
-      <Cta />
+      <main>
+        <Intro />
+        <Url />
+        <Features />
+        <Cta />
+      </main>
+      <Footer />
     </>
   );
 }
