@@ -46,7 +46,7 @@ function Features() {
             </p>
           </div>
 
-          <div className="mb-[5.625rem] flex flex-col items-center rounded-md bg-white px-6 pb-10 shadow-sm">
+          <div className="flex flex-col items-center rounded-md bg-white px-6 pb-10 shadow-sm ">
             <div className="flex h-[5.5rem] w-[5.5rem] -translate-y-1/2 items-center justify-center rounded-full bg-dark-violet-custom">
               <img src={fullyCustomizedIcon} alt="A chart" />
             </div>
