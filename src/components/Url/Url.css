@@ -1,0 +1,9 @@
+.background-image {
+  background: url("../../assets/bg-shorten-mobile.svg");
+}
+
+@media (min-width: 640px) {
+  .background-image {
+    background: url("../../assets/bg-shorten-desktop.svg");
+  }
+}

@@ -1,6 +1,6 @@
 function Menu(props) {
   return (
-    <div className="absolute left-0 top-24 w-full px-6 text-lg shadow-sm sm:hidden">
+    <div className="absolute left-0 top-24 z-10 w-full px-6 text-lg shadow-sm sm:hidden">
       <div className="rounded-lg bg-dark-violet-custom px-[1.375rem] py-[2.375rem]">
         <ul className="flex flex-col items-center gap-[1.875rem] border-b border-b-grayish-violet-custom pb-8 text-white">
           <li>
