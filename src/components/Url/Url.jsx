@@ -2,7 +2,7 @@ import "./Url.css";
 
 function Url() {
   return (
-    <section className=" py-11 sm:pt-8">
+    <section className=" url-bg-color py-11 sm:pb-[3.75rem] sm:pt-8">
       <div className="mx-auto max-w-6xl px-6 sm:px-[1.1875rem]">
         <form className=" background-image grid grid-cols-1 gap-3 rounded-lg bg-dark-violet-custom bg-right-top bg-no-repeat p-6 sm:grid-cols-10 sm:gap-6 sm:px-16 sm:py-[3.1875rem]">
           <input

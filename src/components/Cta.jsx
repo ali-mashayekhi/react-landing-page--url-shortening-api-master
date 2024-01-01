@@ -4,7 +4,7 @@ import bgPattern from "../assets/bg-boost-mobile.svg";
 
 function Cta() {
   return (
-    <section className="">
+    <section className="bg-gray-transparent-custom sm:pt-[3.75rem]">
       <div>
         <div
           className="flex flex-col items-center bg-dark-violet-custom px-2 pb-[5.375rem] pt-24"

@@ -6,7 +6,7 @@ function Intro() {
     <section className="pb-11 sm:pb-8">
       <div className="grid max-w-6xl grid-cols-1 px-6 sm:mx-auto sm:grid-cols-2  sm:px-[1.1875rem] ">
         <img
-          className="mb-[2.625rem] min-h-[20.3125rem] overflow-visible object-cover object-left sm:col-start-2 lg:min-h-[30.3125rem] xl:pl-28"
+          className="mb-[2.625rem] min-h-[20.3125rem] overflow-visible object-cover object-left sm:col-start-2 sm:mb-0 lg:min-h-[30.3125rem] xl:pl-28"
           src={illustration}
           alt="illustration of a woman sitting behind desk with computer on it."
         />

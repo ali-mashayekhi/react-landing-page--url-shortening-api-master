@@ -2,6 +2,27 @@
   background: url("../../assets/bg-shorten-mobile.svg");
 }
 
+.url-bg-color {
+  background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    #fff 50%,
+    hsla(0, 0%, 75%, 0.3) 50%,
+    hsla(0, 0%, 75%, 0.3) 100%
+  );
+}
+/* .bg-features {
+    background: linear-gradient(
+      to right,
+      #fff 0%,
+      #fff 48%,
+      hsl(180, 66%, 49%) 48%,
+      hsl(180, 66%, 49%) 52%,
+      #fff 52%,
+      #fff 100%
+    );
+  } */
+
 @media (min-width: 640px) {
   .background-image {
     background: url("../../assets/bg-shorten-desktop.svg");

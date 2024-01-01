@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "gray-custom": "hsl(0, 0%, 75%)",
+        "gray-transparent-custom": "hsla(0, 0%, 75%, 0.3)",
         "grayish-violet-custom": "hsl(257, 7%, 63%)",
         "very-dark-blue-custom": "hsl(255, 11%, 22%)",
         "very-dark-violet-custom": "hsl(260, 8%, 14%)",
@@ -15,6 +16,10 @@ export default {
 
       backgroundImage: {
         "url-pattern-mobile": "url(../../assests/bg-shorten-mobile.svg)",
+      },
+
+      gridRow: {
+        "span-7": "span 7 / span 7",
       },
     },
   },
