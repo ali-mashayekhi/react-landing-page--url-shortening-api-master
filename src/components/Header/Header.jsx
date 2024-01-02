@@ -7,6 +7,8 @@ import Navigation from "./Navigation";
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
+  setScrollAvailability(showMenu);
+
   function toggleMenuHandler() {
     setShowMenu((previousState) => !previousState);
   }
@@ -18,9 +20,9 @@ function Header() {
           <img src={logo} alt="shortly logo" />
         </a>
         <Navigation />
-        <div className="leading-none sm:hidden" onClick={toggleMenuHandler}>
+        <button className="leading-none sm:hidden" onClick={toggleMenuHandler}>
           <img className="h-6 w-7" src={menu} alt="menu icon" />
-        </div>
+        </button>
 
         {showMenu && <Menu />}
       </div>
@@ -29,3 +31,8 @@ function Header() {
 }
 
 export default Header;
+
+function setScrollAvailability(showMenu) {
+  if (showMenu) return (document.body.style.overflow = "hidden");
+  return (document.body.style.overflow = "visible");
+}
