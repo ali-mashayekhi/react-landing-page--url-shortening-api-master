@@ -10,7 +10,7 @@ function Url() {
             type="text"
             placeholder="Shorten a link here..."
           />
-          <button className="h-12 rounded-lg bg-cyan-custom text-lg font-semibold text-white sm:col-span-2 sm:h-[3.875rem]">
+          <button className="hover:bg-cyan-custom-tint h-12 rounded-lg bg-cyan-custom text-lg font-semibold text-white transition-all duration-300 sm:col-span-2 sm:h-[3.875rem]">
             Shorten It!
           </button>
         </form>
