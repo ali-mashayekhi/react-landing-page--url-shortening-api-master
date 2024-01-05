@@ -1,6 +1,6 @@
 import { useState } from "react";
-import logo from "../../assets/logo.svg";
-import menu from "../../assets/menu.svg";
+import logo from "../../../assets/logo.svg";
+import menu from "../../../assets/menu.svg";
 import Menu from "./Menu";
 import Navigation from "./Navigation";
 
