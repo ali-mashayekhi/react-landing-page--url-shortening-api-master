@@ -12,12 +12,12 @@ function UrlForm(props) {
     if (!hasError && !isUrl(e.target.value) && isSubmited) setHasError(true);
   }
 
-  function submitHandler(e) {
+  async function submitHandler(e) {
     e.preventDefault();
     setIsSubmited(true);
     if (!isUrl(enteredUrl)) return setHasError(true);
 
-    props.shortenUrl(enteredUrl);
+    await props.shortenUrl(enteredUrl);
 
     //Resetting functionality
     setEnteredUrl("");

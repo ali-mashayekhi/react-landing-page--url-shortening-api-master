@@ -5,40 +5,48 @@ import "./Url.css";
 import { useState } from "react";
 
 function Url() {
-  useState();
+  const [shortenedLinks, setShortenedLinks] = useState([]);
 
-  function shortenUrl(enteredUrl) {
-    const body = JSON.stringify({
-      url: "https://google.com",
-    });
+  async function shortenUrl(enteredUrl) {
+    let fixedUrl = enteredUrl;
+
+    if (!enteredUrl.startsWith("https://")) fixedUrl = `https://${enteredUrl}`;
 
     const options = {
-      body: JSON.stringify({
-        message: "Added!",
-        short: "param",
-        long: "https://www.param.me",
-      }),
+      body: JSON.stringify({ url: fixedUrl }),
       headers: {
+        "api-key": "P6fU2mKuwppQLWQd5d3HX3PVd8y05dMUsa4BJSVqzbHeG",
         "Content-Type": "application/json",
+        Accept: "application/json",
       },
       method: "POST",
     };
 
-    // console.log(body, options);
+    try {
+      const response = await fetch(
+        "https://www.shrtlnk.dev/api/v2/link",
+        options,
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
 
-    fetch("https://csclub.uwaterloo.ca/~phthakka/1pt-express", options)
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((e) => {
-        console.log(e);
+      setShortenedLinks((state) => {
+        return [
+          ...state,
+          { shortUrl: data.shrtlnk, longUrl: data.url, id: data.key },
+        ];
       });
+    } catch (error) {
+      console.error("Fetch error:", error);
+    }
   }
 
   return (
     <section className="pt-11 sm:pt-8">
       <UrlForm shortenUrl={shortenUrl} />
-      <UrlList />
+      <UrlList links={shortenedLinks} />
     </section>
   );
 }
