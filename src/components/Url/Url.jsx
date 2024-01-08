@@ -15,7 +15,7 @@ function Url() {
     const options = {
       body: JSON.stringify({ url: fixedUrl }),
       headers: {
-        "api-key": "P6fU2mKuwppQLWQd5d3HX3PVd8y05dMUsa4BJSVqzbHeG",
+        "api-key": "",
         "Content-Type": "application/json",
         Accept: "application/json",
       },
