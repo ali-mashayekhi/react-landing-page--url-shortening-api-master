@@ -36,7 +36,7 @@ function UrlForm(props) {
           className=" background-image grid grid-cols-1 gap-3 rounded-lg bg-dark-violet-custom bg-right-top bg-no-repeat p-6 sm:grid-cols-10 sm:gap-6 sm:px-16 sm:py-[3.1875rem]"
           onSubmit={submitHandler}
         >
-          <div>
+          <div className="sm:col-span-8 sm:h-[3.875rem]">
             <input
               className={inputClasses}
               type="text"
