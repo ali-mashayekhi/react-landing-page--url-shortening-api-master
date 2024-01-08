@@ -12,6 +12,7 @@ export default {
         "cyan-custom": "hsl(180, 66%, 49%)",
         "cyan-custom-tint": "#95e7e7",
         "dark-violet-custom": "hsl(257, 27%, 26%)",
+        "dark-violet-custom-tint": "#3b3054",
         "red-custom": "hsl(0, 87%, 67%)",
       },
 
