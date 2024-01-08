@@ -15,7 +15,7 @@ function Url() {
     const options = {
       body: JSON.stringify({ url: fixedUrl }),
       headers: {
-        "api-key": "",
+        "api-key": import.meta.env.VITE_URL_SHORTENER_API_KEY,
         "Content-Type": "application/json",
         Accept: "application/json",
       },
