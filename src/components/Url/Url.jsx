@@ -6,8 +6,13 @@ import { useState } from "react";
 
 function Url() {
   const [shortenedLinks, setShortenedLinks] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [fetchingError, setFetchingError] = useState(false);
 
   async function shortenUrl(enteredUrl) {
+    setLoading(true);
+    setFetchingError(false);
+
     let fixedUrl = enteredUrl;
 
     if (!enteredUrl.startsWith("https://")) fixedUrl = `https://${enteredUrl}`;
@@ -34,19 +39,21 @@ function Url() {
 
       setShortenedLinks((state) => {
         return [
-          ...state,
           { shortUrl: data.shrtlnk, longUrl: data.url, id: data.key },
+          ...state,
         ];
       });
     } catch (error) {
-      console.error("Fetch error:", error);
+      setFetchingError(true);
     }
+
+    setLoading(false);
   }
 
   return (
     <section className="pt-11 sm:pt-8">
       <UrlForm shortenUrl={shortenUrl} />
-      <UrlList links={shortenedLinks} />
+      <UrlList links={shortenedLinks} loading={loading} error={fetchingError} />
     </section>
   );
 }
