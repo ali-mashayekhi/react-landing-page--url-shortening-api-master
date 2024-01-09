@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Shortly is a landing page with an easy-to-use URL shortening feature. Simplify link sharing by quickly creating shortened versions of long URLs. Whether you're sharing on social media or through other channels, Shortly streamlines the process, providing a clean and user-friendly experience.
+Shortly is a landing page with an easy-to-use URL shortening feature. Simplify link sharing by quickly creating shortened versions of long URLs. The landing page is fully responsive, ensuring a seamless user experience across various devices.
 
 ## Screenshots or Demo
 
@@ -13,6 +13,7 @@ You can try out our live demo at [ali-url-shortening-api-master.netlify.app](htt
 - Simple landing page with a user-friendly interface
 - URL shortening using an API for quick and efficient results
 - Copy shortened URLs with a single click using the integrated copy button
+- Fully responsive design for a seamless experience on various devices
 
 ## Installation
 
@@ -38,7 +39,7 @@ You can try out our live demo at [ali-url-shortening-api-master.netlify.app](htt
 4. Start the application
 
    ```bash
-   npm install
+   npm run dev
 
    ```
 
