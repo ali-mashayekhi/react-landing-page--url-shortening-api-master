@@ -3,17 +3,17 @@ import SocialLinks from "./SocialLinks";
 
 function Footer() {
   return (
-    <footer className="bg-very-dark-violet-custom py-[3.125rem] sm:py-[4.3125rem]">
-      <div className="mx-auto flex max-w-[72.375rem] flex-col items-center sm:grid sm:grid-cols-9 sm:items-start  sm:px-6">
-        <a href="#" className="mb-[3.125rem] sm:col-span-3">
+    <footer className="bg-very-dark-violet-custom py-[3.125rem] md:py-[4.3125rem]">
+      <div className="mx-auto flex max-w-[72.375rem] flex-col items-center md:grid md:grid-cols-9 md:items-start  md:px-6">
+        <a href="#" className="mb-[3.125rem] md:col-span-3">
           <img
             src={logo}
             alt="Shortly Logo"
             className="fill-white stroke-white text-white"
           />
         </a>
-        <div className="sm:col-span-6 sm:grid sm:grid-cols-4 sm:gap-[2.5rem]">
-          <div className="mb-9 text-center sm:mb-0 sm:text-left">
+        <div className="md:col-span-6 md:grid md:grid-cols-4 md:gap-[2.5rem]">
+          <div className="mb-9 text-center md:mb-0 md:text-left">
             <p className="mb-6 text-base font-bold text-white">Features</p>
             <ul className="flex flex-col gap-2">
               <li className="text-base text-gray-custom transition-all duration-300 hover:text-cyan-custom">
@@ -27,7 +27,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="mb-9 text-center sm:mb-0 sm:text-left">
+          <div className="mb-9 text-center md:mb-0 md:text-left">
             <p className="mb-6 text-base font-bold text-white">Resources</p>
             <ul className="flex flex-col gap-2">
               <li className="text-base text-gray-custom transition-all duration-300 hover:text-cyan-custom">
@@ -41,7 +41,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="mb-9 text-center sm:mb-0 sm:text-left">
+          <div className="mb-9 text-center md:mb-0 md:text-left">
             <p className="mb-6 text-base font-bold text-white">Company</p>
             <ul className="flex flex-col gap-2">
               <li className="text-base text-gray-custom transition-all duration-300 hover:text-cyan-custom">

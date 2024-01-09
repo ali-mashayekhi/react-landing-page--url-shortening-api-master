@@ -1,5 +1,7 @@
 .bg-pattern {
   background: url("../assets/bg-boost-mobile.svg"), hsl(257, 27%, 26%);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 640px) {
