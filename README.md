@@ -24,23 +24,23 @@ You can try out our live demo at [ali-url-shortening-api-master.netlify.app](htt
 
 2. Navigate to the project directory
 
-```bash
-cd shortly-url-shortener
-```
+   ```bash
+   cd shortly-url-shortener
+   ```
 
 3. Install dependencies
 
-```bash
-npm install
+   ```bash
+   npm install
 
-```
+   ```
 
 4. Start the application
 
-```bash
-npm install
+   ```bash
+   npm install
 
-```
+   ```
 
 5. Open your browser and visit http://localhost:3000
 
@@ -58,3 +58,9 @@ npm install
 - Built with [React](https://reactjs.org/)
 - Styled with [Tailwind CSS](https://tailwindcss.com/)
 - URL shortening powered by [Shrtlnk API](https://www.shrtlnk.dev/developer)
+
+## Frontend Mentor Challenge
+
+This project is a solution to the [Frontend Mentor URL Shortening API Landing Page Challenge](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G). It was created to practice and showcase web development skills.
+
+- [View my solution](https://www.frontendmentor.io/solutions/url-shortening-api-landing-page-BSW1Zlwq5V)
